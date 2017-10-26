@@ -33,6 +33,15 @@ namespace ASSIGNMENT1
         public Animal()
         {}
 
-       
+        public Animal(string nam, int wght, int ag)
+        {
+            Name = nam;
+            Weight = wght;
+            Age = ag;
+        }
+        public virtual string Stats()
+        {
+            return "The Animal Name is:" + name + "\n Age is:" + age + "Weight is:" + weight;
+        }
     }
 }

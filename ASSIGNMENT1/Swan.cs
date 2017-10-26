@@ -15,5 +15,15 @@ namespace ASSIGNMENT1
             set { color = value; }
         }
 
+        public Swan(string nam, int wght, int ag,int ws, string col) : base(nam, wght, ag,ws)
+        {
+            Color = col;
+        }
+
+        //public override 
+
+
+
+
     }
 }

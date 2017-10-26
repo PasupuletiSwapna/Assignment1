@@ -8,12 +8,18 @@ namespace ASSIGNMENT1
 {
     public class Pelican:Bird
     {
-        private string color;
-        public string Color
+        private string beak;
+        public string Beak
         {
-            get { return color; }
-            set { color = value; }
+            get { return beak; }
+            set { beak = value; }
         }
+
+        public Pelican(string nam, int wght, int ag,int ws, string bek) : base(nam,wght,ag,ws)
+        {
+           Beak = bek;
+        }
+
 
     }
 }
