@@ -25,15 +25,27 @@ namespace ASSIGNMENT1
             per1.Height = height;
             per1.Weight = weight;
             return per1;
+         }
 
+        private List<Person> list = new List<Person>();
 
+        public void Add(Person person)
+        {
+            list.Add(person);
         }
-               
 
-
-
-            
+        public void List()
+        {
+            foreach (var person in list)
+            {
+                Console.WriteLine(person);
+            }
         }
+
+
+
 
     }
+
+}
 
