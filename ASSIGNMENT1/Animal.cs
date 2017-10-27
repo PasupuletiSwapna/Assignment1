@@ -27,12 +27,31 @@ namespace ASSIGNMENT1
         {
             get { return age; }
             set { age = value; }
-               
+
         }
 
         public Animal()
-        {}
+        { }
 
+        //3.3.4 Constructor to instantiate class with specific parameters
+        public Animal(string name, int weight, int age)
+        {
+            Name = name;
+            Weight = weight;
+            Age = age;
+        }
        
+        
+
+        //3.3.1 Method to print stats from any class
+        public virtual string Stats()
+        {
+            return "This is a " + this.GetType().Name +" "+
+                "named: " + Name + "." +
+                  "\nIt weighs: " + Weight +
+                  "\nIt is " + Age + " years old. \n------------------";
+            
+        }
+
     }
-}
+}   

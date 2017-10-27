@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ASSIGNMENT1
 {
-    public class Pelican:Bird
+    public class Pelican : Bird
     {
         private string color;
         public string Color

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ASSIGNMENT1
 {
-    public class Swan : Bird
+    public class Flamingo : Bird
     {
-        private string color;
-        public string Color
-        {
-            get { return color; }
-            set { color = value; }
+        private string height;
+
+        public string Height {
+            get {return height;}
+            set {height = value;}
         }
 
     }

@@ -15,11 +15,28 @@ namespace ASSIGNMENT1
             set { miles = value;}
         }
 
+        //Creating a horse
+        /*public Horse(string name, int weight, int age, string miles):
+            base(name, weight, age)
+        {
+            Name = "Horsey";
+            Weight = 210;
+            Age = 5;
+            Miles = 80;
+        }
+        */
+
+        //3.3.2 Method calling stats() from Animal to Horse
+        public override string Stats()
+        {
+            return base.Stats() +
+                "\nIt runs " + Miles + " per hour.";
+        }
 
 
 
 
-       
+
 
     }
 }
